@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav">
+      <div class="container-fluid">
+        <img
+          src="../img/deftoneslogo.jpg"
+          alt="Logo"
+          height="38"
+          class="me-2 logo-img"
+          id="logo"
+        />
+        <span class="brand-text">DEFTONES</span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-links">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../albumPages/albums.html">Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../tourPage/tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../galleryPages/gallery.html"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input
+              id="search"
+              class="form-control"
+              type="search"
+              placeholder="Search album..."
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="albums-section">
+        <div class="container-lg">
+          <div id="albumRow" class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="0"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/adrenaline.jpg"
+                  class="card-img-top"
+                  alt="Adrenaline"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Adrenaline</h5>
+                  <h6 class="card-subtitle mb-2">(1995)</h6>
+                  <p class="card-text">
+                    Deftones debut album, featuring raw and aggressive tracks
+                    that set the stage for their unique sound in the alternative
+                    metal scene.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="1"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/aroundthefur.jpg"
+                  class="card-img-top"
+                  alt="Around the Fur"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Around the Fur</h5>
+                  <h6 class="card-subtitle mb-2">(1997)</h6>
+                  <p class="card-text">
+                    The band's second album, showcasing a more refined sound
+                    while maintaining their heavy and dynamic style.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="2"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/whitepony.jpg"
+                  class="card-img-top"
+                  alt="White Pony"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">White Pony</h5>
+                  <h6 class="card-subtitle mb-2">(2000)</h6>
+                  <p class="card-text">
+                    Deftones third album, featuring a more experimental and
+                    atmospheric approach, blending heavy riffs with melodic
+                    elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="3"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/deftones.jpg"
+                  class="card-img-top"
+                  alt="Deftones"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Deftones</h5>
+                  <h6 class="card-subtitle mb-2">(2003)</h6>
+                  <p class="card-text">
+                    Deftones self-titled album, continuing to evolve their sound
+                    with a blend of heavy and atmospheric elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="4"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/saturdaynightwrist.jpg"
+                  class="card-img-top"
+                  alt="Saturday Night Wrist"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Saturday Night Wrist</h5>
+                  <h6 class="card-subtitle mb-2">(2006)</h6>
+                  <p class="card-text">
+                    The band's fifth studio album, featuring a mix of heavy and
+                    experimental tracks that reflect their evolving sound.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="5"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/diamondeyes.jpg"
+                  class="card-img-top"
+                  alt="Diamond Eyes"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Diamond Eyes</h5>
+                  <h6 class="card-subtitle mb-2">(2010)</h6>
+                  <p class="card-text">
+                    Deftones sixth album, marked by a return to a heavier sound
+                    with melodic undertones, receiving critical acclaim.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="6"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/koinoyokan.jpg"
+                  class="card-img-top"
+                  alt="Koi No Yokan"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Koi No Yokan</h5>
+                  <h6 class="card-subtitle mb-2">(2012)</h6>
+                  <p class="card-text">
+                    Deftones seventh album, showcasing a blend of heavy and
+                    melodic elements with a more polished production.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="7"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img src="../img/gore.jpg" class="card-img-top" alt="Gore" />
+                <div class="card-body">
+                  <h5 class="card-title">Gore</h5>
+                  <h6 class="card-subtitle mb-2">(2016)</h6>
+                  <p class="card-text">
+                    Deftones eighth album, featuring a mix of heavy and
+                    atmospheric tracks with experimental elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="8"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img src="../img/ohms.jpg" class="card-img-top" alt="Ohms" />
+                <div class="card-body">
+                  <h5 class="card-title">Ohms</h5>
+                  <h6 class="card-subtitle mb-2">(2020)</h6>
+                  <p class="card-text">
+                    Deftones ninth album, continuing their exploration of heavy
+                    and atmospheric sounds with a refined approach.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card card1 album-card"
+                data-index="9"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#albumDetails"
+              >
+                <img
+                  src="../img/privatemusic.jpg"
+                  class="card-img-top"
+                  alt="Private Music"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Private Music</h5>
+                  <h6 class="card-subtitle mb-2">(2025)</h6>
+                  <p class="card-text">
+                    Private Music is the tenth studio album by American
+                    alternative metal band Deftones. Private Music has been
+                    described as alternative metal and shoegaze.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="albumDetails">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="albumTitle">Album</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <img id="albumCover" class="img-fluid mb-3" alt="cover" />
+        <p id="albumDescription"></p>
+        <hr style="color: white" />
+        <h5>Tracklist</h5>
+        <ul id="albumTracks" class="Songlist"></ul>
+      </div>
+    </div>
+    <div id="audioplayer" class="audio-player">
+      <p id="nowPlaying">Select a song</p>
+      <audio id="audio" controls></audio>
+    </div>
+    <script src="../java.js"></script>
+    <footer class="main-footer">
+      <p>© Matej Hnát 2025</p>
+    </footer>
+  </body>
+</html>
